@@ -7,7 +7,8 @@ def encode_matrix(input_arr):
     code_map = {
        
     }
-    # 先二值化，假设原始像素0-255，阈值127
+    #具体数据我隐藏掉了
+    # 先二值化，假设原始像素0-255，阈值127，
     bits = (input_arr > 127).astype(int)
     # 使用np.char.add拼接字符串，避免类型不兼容
     bits_str = np.char.add(
